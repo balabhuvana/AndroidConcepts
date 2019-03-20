@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.BroadcastReceiverActivity"
+    tools:showIn="@layout/activity_broadcast_receiver">
+
+    <TextView
+        android:id="@+id/tvGetEventText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSendBroadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Broadcast"
+        app:layout_constraintTop_toBottomOf="@+id/tvGetEventText" />
+
+    <Button
+        android:id="@+id/btnAirplaneBroadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Airplane Broadcast"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendBroadcast" />
+
+    <Button
+        android:id="@+id/btnLocalBroadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Local Broadcast"
+        app:layout_constraintTop_toBottomOf="@+id/btnAirplaneBroadcast" />
+
+</android.support.constraint.ConstraintLayout>
